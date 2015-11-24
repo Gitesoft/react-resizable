@@ -19,7 +19,6 @@ See the [demo](/test/TestLayout.jsx) for more on this.
 ### Usage
 
 ```javascript
-var Resizable = require('react-resizable').Resizable; // or,
 var ResizableBox = require('react-resizable').ResizableBox;
 
 ...
@@ -31,11 +30,9 @@ render: function() {
     </ResizableBox>
   );
 }
-```
 
-### <Resizable> Options
 
-```js
+### Options
 {
 // Functions
 onResizeStop: React.PropTypes.func,
@@ -49,21 +46,4 @@ handleSize: React.PropTypes.array,
 // These will be passed wholesale to react-draggable
 draggableOpts: React.PropTypes.object
 }
-```
-
-### <ResizableBox> Options
-
-```js
-{
-lockAspectRatio: React.PropTypes.bool, // Preserves aspect
-
-// Constaints coords, pass [x,y]
-minConstraints: React.PropTypes.arrayOf(React.PropTypes.number),
-maxConstraints: React.PropTypes.arrayOf(React.PropTypes.number),
-
-// Initial width/height - otherwise use CSS
-height: React.PropTypes.number,
-width: React.PropTypes.number
-}
-```
 ```
